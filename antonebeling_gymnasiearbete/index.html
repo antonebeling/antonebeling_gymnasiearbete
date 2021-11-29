@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<title>Super Space Invaders 7</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+</head>
+
+<body>
+
+<div id="menydiv" style="top: 40px">
+	<div id="titel"> SUPER SPACE INVADERS 7</div>
+	<div id="menyst" onclick="counter()"> START </div>
+	<div id="menyhi"> HIGHSCORE</div>
+	<div id="menyop"> OPTIONS</div>
+</div>
+
+<div id="countdown">5</div>
+
+<div id="GAMEOVER" style="top: -2000px">
+	<div id="gameovertext" > GAME OVER </div>
+    <div id="tryagain" onclick="location.reload();"> TRY AGAIN </div>
+</div>
+
+<div id="VICTORY" style="top:-2000px">
+	<div id="victorytext" > VICTORY </div>
+    <div id="again" onclick="location.reload();">PLAY AGAIN</div>
+</div>
+
+<div id="scorediv" style="left: 249px; top: -970px"> SCORE: 0</div>
+<div id="spelplan" style="left: 249px; top: -1010px">
+
+<div id="enemy" style="left: 666px; top: -2000px">
+	<img class="enemy" src="bilder/Enemy.png" alt=""/>
+</div>
+<div id="enemyskott" style="left: 709px; top: 80000px">
+ 		<img class="enemyskott" src="bilder/Enemyskott.png" alt=""/>
+</div>
+
+<div id="radA" style="left: 10px; top: 0px"> 
+		<div class="aliendiv"><img id="alienA1" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienA2" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienA3" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienA4" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienA5" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienA6" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienA7" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienA8" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienA9" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienA10" src="bilder/alien3/Alien3Rätt.png" alt=""/></div>
+</div>
+ 
+<div id="radB" style="left: 10px; top: 100px"> 
+		<div class="aliendiv"><img id="alienB1" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienB2" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienB3" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienB4" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienB5" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienB6" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienB7" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienB8" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienB9" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienB10" src="bilder/alien2/Alien2Rätt.png" alt=""/></div>
+</div>
+
+<div id="radC" style="left: 10px; top: 200px"> 
+		<div class="aliendiv"><img id="alienC1" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienC2" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienC3" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienC4" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienC5" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienC6" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienC7" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienC8" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienC9" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienC10" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+</div>
+ 
+<div id="radD" style="left: 10px; top: 300px"> 
+		<div class="aliendiv"><img id="alienD1" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienD2" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienD3" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienD4" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienD5" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+		<div class="aliendiv"><img id="alienD6" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienD7" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienD8" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienD9" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+        <div class="aliendiv"><img id="alienD10" src="bilder/alien1/AlienRätt.png" alt=""/></div>
+</div>
+
+<div id="skepp" style="left: 666px"> 
+		<img class="ship" src="bilder/skeppNy2.png" alt=""/>
+</div>
+<div id="skott" style="left: 709px; top: 800px">
+ 		<img class="skott" src="bilder/skott2.png" alt=""/>
+</div>
+</div>
+
+
+</body>
+</html>

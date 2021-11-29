@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+html
+{
+	background-image:url(bilder/bakgrund.jpg);
+	overflow: hidden;
+
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	margin:0;
+}
+
+/* #hej
+{
+	background-image: url(bilder/ship.png);
+	position: absolute;
+	height: 60px;
+	width: 90px;
+	top: 980px;
+	left: 915px;
+}
+*/
+#menydiv
+{
+	position:absolute;
+	height: 300px;
+	width: 600px;
+	left: 100px;
+}
+#menyst,#menyhi,#menyop
+{
+	position:relative;
+	margin-left: 30px;
+	padding-top: 50px;
+	color: white; 
+	width: 300px;
+	font-size: 55px;
+}
+
+#menyhi,#menyop
+{
+	text-decoration: line-through;
+	cursor:not-allowed;	
+}
+
+#menyst:hover
+{
+	color: #5faac7;
+	cursor: pointer;
+	padding-left: 30px;
+}
+
+#menyhi:hover, #menyop:hover
+{
+	color: #5faac7;
+	cursor: not-allowed;
+	padding-left: 30px;
+}
+
+#titel
+{
+	position:relative;
+	margin-left: 30px;
+	padding-top: 50px;
+	color: #5faac7; 
+	width: 2000px;
+	font-size: 85px;
+	left: 350px;
+	text-decoration: underline;
+}
+
+#spelplan
+{
+	position: absolute;
+	border: 1px solid white;
+	width: 1400px;
+	height: 880px;
+}
+
+#radA
+{
+	position: absolute;
+	height: 100px;
+	width: 1400px;
+}
+
+#radB
+{
+	position: absolute;
+	height: 100px;
+	width: 1400px;
+}
+
+#radC
+{
+	position: absolute;
+	height: 100px;
+	width: 1400px;
+}
+
+#radD
+{
+	position: absolute;
+	height: 100px;
+	width: 1400px;
+}
+
+#skepp
+{
+	position:absolute;
+	top: 800px;
+	height: 60px;
+	width: 500px;
+}
+
+#skott
+{	
+	z-index: -1;
+	height: 50px;
+	width: 100px;
+	position:absolute;
+}
+
+#enemy
+{
+	position:absolute;
+	height: 60px;
+	width: 500px;
+}
+
+#enemyskott
+{	
+	z-index: -1;
+	height: 50px;
+	width: 100px;
+	position:absolute;
+	display: hidde
+}
+
+
+.alien
+{
+	height: 84px;
+	width: 75px;
+	size: 50% 50%;
+	margin-left: 20px;
+}
+
+#alienA1, alienA2, alienA3, alienA4, alienA5, alienA6, alienA7, alienA8, alienA9, alienA10, alienB1, alienB2, alienB3, alienB4, alienB5, alienB6, alienB7, alienB8, alienB9, alienB10, alienC1, alienC2, alienC3, alienC4, alienC5, alienC6, alienC7, alienC8, alienC9, alienC10, alienD1, alienD2, alienD3, alienD4, alienD5, alienD6, alienD7, alienD8, alienD9, alienD10
+{
+	height: 84px;
+	width: 75px;
+	size: 50% 50%;
+}
+
+.ship
+{
+	width: 90px;
+	height: 60px;
+	size: 50% 50%;
+}
+
+.enemy
+{
+	width: 90px;
+	height: 60px;
+	size: 50% 50%;
+}
+
+.aliendiv
+{
+	float: left;
+	margin-left: 20px;
+}
+@font-face {
+ 	font-family: 'Highscore';
+ 	src: url('HISCORE.ttf');
+}
+
+
+#scorediv
+{
+	position: absolute;
+	height: 51px;
+	width: 400px;
+	color: white;
+	font-family: 'Highscore';
+	font-size: 30px;
+}
+
+#GAMEOVER
+{
+	position: absolute;
+	background-color: black;
+	height: 1080px;
+	width: 1920px;
+	padding: 0px;
+	z-index: 40;
+	opacity: 0.7;
+
+}
+
+#gameovertext
+{
+	position: absolute;
+	color: white;
+	z-index: 50;font-family: 'Highscore';
+	font-size: 80px;
+	top: 400px;
+	left: 600px;
+}
+
+#tryagain
+{
+	position: absolute;
+	color: white;
+	z-index: 50;font-family: 'Highscore';
+	font-size: 60px;
+	top: 550px;
+	left: 690px;
+	border: 1px solid white;
+	padding-left: 5px;
+}
+
+#again
+{
+	position: absolute;
+	color: white;
+	z-index: 50;font-family: 'Highscore';
+	font-size: 60px;
+	top: 550px;
+	left: 690px;
+	border: 1px solid white;
+	padding-left: 5px;
+}
+
+#tryagain:hover
+{
+	cursor: pointer;
+	color: black;
+	background-color:white;
+}
+
+#again:hover
+{
+	cursor: pointer;
+	color: black;
+	background-color:white;
+}
+
+#VICTORY
+{
+	position: absolute;
+	background-color: black;
+	height: 1080px;
+	width: 1920px;
+	padding: 0px;
+	z-index: 40;
+	opacity: 0.7;
+	background-image: url(bilder/fireworks.png);
+
+}
+
+#victorytext
+{
+	position: absolute;
+	color: white;
+	z-index: 50;
+	font-family: 'Highscore';
+	font-size: 80px;
+	top: 400px;
+	left: 700px;
+}
+
+#countdown
+{
+	position:absolute;
+	left: 940px;
+	top: 700px;
+	font-size: 50px;
+	color: white;
+	display:none;
+	font-family: 'Highscore';
+}
+
+
